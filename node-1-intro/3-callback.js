@@ -23,6 +23,13 @@ var handleResults= function(err, results, time) {
     }
 };
 
-evenDoubler(2, handleResults);
+//evenDoubler(2, handleResults);
+//evenDoubler(3, handleResults);
+//evenDoubler(10, handleResults);
 
-console.log("-----");
+for( var i = 0; i < 10; i++) {
+	console.log("Calling evenDoubler for value: " + i);
+	evenDoubler(i, handleResults);
+}
+
+console.log("------");
