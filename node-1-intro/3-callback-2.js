@@ -15,6 +15,7 @@ var evenDoubler = function(v, callback) {
     }
 }
 
+var count = 0;
 for( var i = 0; i < 10; i++ ) {
     console.log("Calling evenDoubler for value: " + i);
     evenDoubler(i, function(err, results, time) {
@@ -22,6 +23,10 @@ for( var i = 0; i < 10; i++ ) {
             console.log("ERROR: " + err.message);
         } else {
             console.log("The Results are: " + results + " (" + time + " ms)");
+        }
+        
+        if(++count === 10) {
+            console.log("Done !");
         }
     });
 }
