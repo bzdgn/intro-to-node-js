@@ -9,31 +9,29 @@
 			var outbox = document.getElementById("demo");
 			
 			var evenDoubler = function(input, callback) {
-				var output;
 				var waitTime = Math.floor(Math.random()*(maxTime+1));
 				if(input%2) {
 					setTimeout(function () {
-						output = callback(new Error("Odd Input"));
-						outbox.innerHTML += output + '<br>';
+						callback(new Error("Odd Input"));
 					}, waitTime);
 				} else {
 					setTimeout(function () {
-						output = callback(null, input*2, waitTime);
-						outbox.innerHTML += output + '<br>';
+						callback(null, input*2, waitTime);
 					}, waitTime);
 				}
 			};
 			
 			var handleResults = function(error, results, time) {
 				var output;
+				
 				if(error) {
 					output = "ERROR: " + error.message;
 				} else {
 					output = "The results: " + results + " (" + time + " ms)";
 				}
 				
+				outbox.innerHTML += output + '<br>';
 				console.log(output);
-				return output;
 			};
 			
 			var i;
