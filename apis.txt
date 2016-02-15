@@ -1,0 +1,8 @@
+fs
+http
+crypto
+os
+
+to include;
+***********
+var fs = require('fs');
