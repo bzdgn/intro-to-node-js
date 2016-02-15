@@ -1,0 +1,10 @@
+require usage;
+**************
+var data = require('./data');           // data.js in the same dir
+var foo  = require('./other/foo');      // foo.js in the other subdir
+var bar  = require('../lib/bar');       // bar.js located on the lib in the upper directory
+
+single variable;
+****************
+
+var justOne = requre('./data').justOne;
