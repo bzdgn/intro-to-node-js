@@ -8,3 +8,15 @@ single variable;
 ****************
 
 var justOne = requre('./data').justOne;
+
+npm;
+****
+see: npmjs.org
+
+npm install <module_name>
+...... installs modules to node_modules folder
+
+-g flag (global)
+npm install -g <module_name>
+
+npm module: request

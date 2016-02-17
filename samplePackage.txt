@@ -1,0 +1,19 @@
+package.json sample (located under project root directory)
+**********************************************************
+{
+    "name" : "coolstuff",       // required
+    "version" : "0.0.1",        // required
+    "author" : "Levent Divilioglu",
+    "description" : "Awesome module!",
+    "keywords" : ["cool", "awesome", "megolomaniac"],
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/bzdgn/coolstuff.git"
+    },
+    "dependencies" : {
+        "underscore" : "1.4.x",
+        "request" : ">=2.1.0"
+    },
+    "main" : "lib/cool.js"
+}
+// to publish, use: npm publish . (from project root dir)
