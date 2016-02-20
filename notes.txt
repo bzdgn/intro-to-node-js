@@ -20,3 +20,20 @@ npm install <module_name>
 npm install -g <module_name>
 
 npm module: request
+
+Callback func vs Events
+***********************
+    On Callback, the provided callback function is called as the request completed.
+    Which means simply, one request, one reply.
+    
+    On Event model, it is more of a publish/subscribe approach. On funcion can be
+    invoked repeatedly to provide multiple functions to invoke.
+
+    In Callback, no result received until you received all the results.
+    
+    In Event model, functions associated with the item event will be invoked for each item.
+    Act on the first item as soon as it arrives and the second and so forth.
+    
+    
+
+
